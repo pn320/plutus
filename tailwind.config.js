@@ -53,7 +53,7 @@ module.exports = {
       keyframes: {
         grid: {
           "0%": { width: "0%", opacity: "100%" },
-          "100%": { width: "100%", opacity: "40%" },
+          "100%": { width: "calc(100% + 150px)", opacity: "40%" },
         },
       },
       animation: {
