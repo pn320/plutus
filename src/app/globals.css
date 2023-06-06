@@ -7,6 +7,12 @@
   src: url("/fonts/basis-grotesque-bold-trial.otf");
 }
 
+@layer base {
+  body {
+    @apply box-border;
+  }
+}
+
 @layer components {
   .grid-fade {
     -webkit-mask: linear-gradient(to left, #fff 93%, transparent),
