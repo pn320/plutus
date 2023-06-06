@@ -17,7 +17,7 @@ module.exports = {
       backgroundImage: {
         hero: "linear-gradient(180deg,#555,#000)",
         hero_dark: "linear-gradient(180deg,#fff,#adadad)",
-        gridLine:
+        gridline:
           "linear-gradient(to right,rgba(0, 0, 0, .45), rgba(0, 0, 0, .45) 50%, transparent 0, transparent)",
       },
       backgroundColor: {
@@ -48,16 +48,16 @@ module.exports = {
         nav: "5px",
       },
       width: {
-        gridLine: "calc(100% + 150px)",
+        gridline: "calc(100% + 150px)",
       },
       keyframes: {
         grid: {
-          "0%": { width: "0%" },
-          "100%": { width: "100%" },
+          "0%": { width: "0%", opacity: "100%" },
+          "100%": { width: "100%", opacity: "40%" },
         },
       },
       animation: {
-        gridAnimation: "grid 1.08s cubic-bezier(0.645,0.045,0.355,1)",
+        grid: "grid 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards",
       },
     },
   },
