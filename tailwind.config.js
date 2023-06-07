@@ -62,8 +62,8 @@ module.exports = {
           "100%": { height: "calc(100% + 75px)", opacity: "40%" },
         },
         opacity: {
-          "0%": { opacity: "0%" },
-          "100%": { opacity: "100%" },
+          "0%": { opacity: "0%", strokeDashoffset: "20" },
+          "100%": { opacity: "100%", strokeDashoffset: "0" },
         },
       },
       animation: {
