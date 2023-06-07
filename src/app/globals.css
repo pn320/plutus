@@ -18,13 +18,21 @@
     -webkit-mask: linear-gradient(to left, #fff 93%, transparent),
       linear-gradient(to right, #fff 93%, transparent),
       linear-gradient(#000, #000);
+    mask: linear-gradient(to left, #fff 93%, transparent),
+      linear-gradient(to right, #fff 93%, transparent),
+      linear-gradient(#000, #000);
     -webkit-mask-composite: destination-in;
+    mask-composite: destination-in;
   }
 
   .grid-fade-vert {
     -webkit-mask: linear-gradient(to top, #fff 93%, transparent),
       linear-gradient(to bottom, #fff 93%, transparent),
       linear-gradient(#000, #000);
+    mask: linear-gradient(to top, #fff 93%, transparent),
+      linear-gradient(to bottom, #fff 93%, transparent),
+      linear-gradient(#000, #000);
     -webkit-mask-composite: destination-in;
+    mask-composite: destination-in;
   }
 }
