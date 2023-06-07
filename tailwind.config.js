@@ -61,10 +61,15 @@ module.exports = {
           "0%": { height: "0%", opacity: "100%" },
           "100%": { height: "calc(100% + 75px)", opacity: "40%" },
         },
+        opacity: {
+          "0%": { opacity: "0%" },
+          "100%": { opacity: "100%" },
+        },
       },
       animation: {
         grid: "grid 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards",
         gridvert: "gridvert 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards",
+        circle: "opacity 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards",
       },
     },
   },
