@@ -11,9 +11,9 @@ export default function Home() {
         </h1>
         <div>
           <p className="relative text-gray-11 text-subheading py-10 px-8 font-light tracking-[-0.01em] after:absolute after:h-[1px] after:bg-gridline after:bg-[length:5px_1px] after:grid-fade after:animate-grid after:delay-[0.35s] after:bottom-[-0.1px] after:left-[-75px]">
-            A complete finance framework to monitor, analyse and manage your
+            A complete framework to monitor, analyse and manage your
             personal finances. Split bills, monitor and set up recurring
-            expenses, and integrate with almost every financial provider you can
+            expenses, and integrate instantly with almost every financial provider you can
             think of.
           </p>
         </div>
