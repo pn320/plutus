@@ -23,7 +23,7 @@ export default function Home() {
             "grid-fade-vert animate-gridvert delay-[0.55s]"
           )}
         />
-        <GridCircle />
+        <GridCircle rotated={false} top={true} />
         <h1
           className={classNames(
             //   base text styling
@@ -64,6 +64,7 @@ export default function Home() {
           )}
         >
           <div className="relative flex gap-4 p-10">
+            <GridCircle rotated={true} top={false} />
             <div
               className={classNames(
                 //   gridline styling
@@ -92,7 +93,7 @@ export default function Home() {
         <div
           className={classNames(
             //   gridline styling
-            "absolute right-[-0.1px] top-[-75px] w-[1px] bg-gridlinever h-full bg-[length:1px_5px]",
+            "absolute right-[-0.1px] top-[-75px] w-[1px] bg-gridlinevert h-full bg-[length:1px_5px]",
             //   grid animation
             "grid-fade-vert animate-gridvert delay-[0.65s]"
           )}
