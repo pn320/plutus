@@ -21,6 +21,8 @@ module.exports = {
           "linear-gradient(to right,rgba(0, 0, 0, .45), rgba(0, 0, 0, .45) 50%, transparent 0, transparent)",
         gridlinevert:
           "linear-gradient(180deg,rgba(0, 0, 0, .45),rgba(0, 0, 0, .45) 50%,transparent 0,transparent)",
+        gridlinevertreverse:
+          "linear-gradient(180deg,rgba(0, 0, 0, .45),rgba(0, 0, 0, .45) 50%,transparent 0,transparent)",
       },
       backgroundColor: {
         nav: "rgb(255 255 255 / 80%)",
@@ -59,16 +61,22 @@ module.exports = {
         },
         gridvert: {
           "0%": { height: "0%", opacity: "100%" },
+          "100%": { height: "calc(100% + 150px)", opacity: "40%" },
+        },
+        gridvertsmall: {
+          "0%": { height: "0%", opacity: "100%" },
           "100%": { height: "calc(100% + 75px)", opacity: "40%" },
         },
         opacity: {
-          "0%": { opacity: "0%", strokeDashoffset: "20" },
+          "0%": { opacity: "0%", strokeDashoffset: "10" },
           "100%": { opacity: "100%", strokeDashoffset: "0" },
         },
       },
       animation: {
         grid: "grid 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards",
         gridvert: "gridvert 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards",
+        gridvertsmall:
+          "gridvertsmall 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards",
         circle: "opacity 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards",
       },
     },
