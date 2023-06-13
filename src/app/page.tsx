@@ -27,14 +27,14 @@ export default function Home() {
         <h1
           className={classNames(
             //   base text styling
-            "w-full relative font-sans p-6 text-hero leading-hero bg-hero text-transparent bg-clip-text font-extrabold tracking-[-0.035em]",
+            "w-full relative font-sans p-6 text-hero lg:leading-hero md:leading-[60px] leading-[55px] bg-hero text-transparent bg-clip-text font-extrabold tracking-[-0.035em]",
             //   gridline styling
             "after:absolute after:h-[1px] after:bg-gridline after:bg-[length:5px_1px] after:bottom-[-0.1px] after:left-[-75px] after:w-gridline",
             // grid line animation
             "after:grid-fade after:animate-grid after:delay-[0.25s]"
           )}
         >
-          Find an Interview Prep Partner
+          Prepare for Interviews Together
         </h1>
         <div>
           <p
@@ -68,7 +68,7 @@ export default function Home() {
             <div
               className={classNames(
                 //   gridline styling
-                "absolute right-[-0.1px] top-[-5px] w-[1px] bg-gridlinevertreverse h-full bg-[length:1px_5px]",
+                "md:absolute md:visible invisible right-[-0.1px] top-[-5px] w-[1px] bg-gridlinevertreverse h-full bg-[length:1px_5px]",
                 //   grid animation
                 "grid-fade-vert animate-gridvertsmall delay-[0.65s]"
               )}
@@ -76,16 +76,16 @@ export default function Home() {
             <div
               className={classNames(
                 //   base styling
-                "left-0 top-[-5px] w-[1px] bg-gridlinevert h-full bg-[length:1px_5px] absolute",
+                "left-0 top-[-5px] w-[1px] bg-gridlinevert h-full bg-[length:1px_5px] md:absolute md:visible invisible",
                 //   grid vertical animation
                 "grid-fade-vert animate-gridvertsmall delay-[0.55s]"
               )}
             />
             <Button href={"/introduction"} variant={"secondary"}>
-              Get started
+              Get Started
             </Button>
             <Button href={"/guide"} variant={"primary"}>
-              Learn how to prepare
+              Prep Guide
             </Button>
           </div>
         </div>
