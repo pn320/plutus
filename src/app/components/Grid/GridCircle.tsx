@@ -15,7 +15,7 @@ export const GridCircle = ({
       viewBox="0 0 75 75"
       width="75"
       className={classNames(
-        "absolute delay-[0.75s] animate-circle",
+        "absolute delay-[1.5s] animate-circle",
         rotated ? "rotate-180" : "",
         top
           ? "top-[-36.5px] left-[-36.5px]"
