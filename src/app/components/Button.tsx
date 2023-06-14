@@ -57,7 +57,7 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <Link href={href} className={buttonClasses({ variant, size })}>
-      {icon ? <span className="mr-2">{icon}</span> : <></>}
+      {icon ? <span className="mr-1.5">{icon}</span> : <></>}
       {children}
     </Link>
   );
