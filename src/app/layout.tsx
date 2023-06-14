@@ -6,7 +6,7 @@ const roboto = Roboto_Mono({ subsets: ["latin-ext"] });
 
 export const metadata = {
   title: "Plutus",
-  description: "A personal financial management application",
+  description: "An complete interview preparation platform like no other",
 };
 
 export default function RootLayout({

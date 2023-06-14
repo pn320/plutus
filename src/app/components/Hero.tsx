@@ -46,9 +46,8 @@ export const Hero = () => (
         )}
       >
         Struggling to prepare for coding interviews? Find an interview partner
-        to practice, for one question at a time or a long cycle of prep. Meet
-        people, discuss, and talk to people who&apos;ve been in your shoes
-        before.
+        to practice and hold yourself accountable, for one question at a time or
+        a season long cycle of preparation. Connect, discuss and grow together.
       </p>
     </div>
     <div
