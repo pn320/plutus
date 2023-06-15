@@ -78,7 +78,7 @@ export const Hero = () => (
             "grid-fade-vert animate-gridvertsmall delay-[0.55s]"
           )}
         />
-        <Button href={"/introduction"} variant={"secondary"}>
+        <Button href={"/start"} variant={"secondary"}>
           Get Started
         </Button>
         <Button href={"/guide"} variant={"primary"}>

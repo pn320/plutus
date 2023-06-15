@@ -1,12 +1,12 @@
-export const VercelIcon = () => {
+export const TrendUpIcon = () => {
   return (
     <svg
       fill="none"
-      shape-rendering="geometricPrecision"
+      shapeRendering="geometricPrecision"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2.5"
       viewBox="0 0 24 24"
       width="16"
       className="text-black"

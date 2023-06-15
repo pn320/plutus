@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { ReactNode } from "react";
 import { Button } from "../Button";
-import { VercelIcon } from "../Icons/vercel";
+import { TrendUpIcon } from "../Icons/learn";
 
 interface LinkProps {
   href: string;
@@ -37,8 +37,8 @@ export const NavBar = () => {
       </div>
       <div className="flex gap-4">
         <Button
-          icon={<VercelIcon />}
-          href={"/introduction"}
+          icon={<TrendUpIcon />}
+          href={"/start"}
           variant={"primary"}
           size={"small"}
         >
