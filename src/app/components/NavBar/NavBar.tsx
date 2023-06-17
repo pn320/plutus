@@ -31,8 +31,8 @@ export const NavBar = () => {
       <div>
         <li className="list-none flex gap-6 text-gray-11 font-light text-sm">
           <LinkElement href="/">Home</LinkElement>
-          <LinkElement href="guide">Guide</LinkElement>
-          <LinkElement href="dashboard">Dashboard</LinkElement>
+          <LinkElement href="/guide">Guide</LinkElement>
+          <LinkElement href="/dashboard">Dashboard</LinkElement>
         </li>
       </div>
       <div className="flex gap-4">

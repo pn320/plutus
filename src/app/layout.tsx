@@ -1,3 +1,4 @@
+import { ClerkProvider } from "@clerk/nextjs";
 import { Inter, Roboto_Mono } from "next/font/google";
 import { NavBar } from "./components/NavBar";
 import "./globals.css";
@@ -16,11 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className}`}>
-        <NavBar />
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={`${inter.className}`}>
+          <NavBar />
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
