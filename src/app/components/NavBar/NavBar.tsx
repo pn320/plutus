@@ -1,4 +1,4 @@
-import { SignOutButton, currentUser } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import classNames from "classnames";
 import { ReactNode } from "react";
 import { Button } from "../Button";
@@ -18,11 +18,6 @@ const LinkElement = ({ href, children }: LinkProps) => {
 };
 
 export const NavBar = async () => {
-  const user = await currentUser();
-  let link = "/";
-  if (!user) {
-    link = "sign-in/";
-  }
   return (
     <header
       className={classNames(
@@ -35,15 +30,16 @@ export const NavBar = async () => {
       )}
     >
       <div>
-        <li className="list-none flex gap-6 text-gray-11 font-light text-sm">
+        <li className="list-none flex gap-6 text-gray-11 font-light text-sm items-center">
+          <SignedIn>
+            <UserButton afterSignOutUrl="/" />
+          </SignedIn>
+          <SignedOut>
+            <LinkElement href="/sign-in">Sign In</LinkElement>
+          </SignedOut>
           <LinkElement href="/">Home</LinkElement>
           <LinkElement href="/guide">Guide</LinkElement>
           <LinkElement href="/dashboard">Dashboard</LinkElement>
-          <SignOutButton>
-            <LinkElement href={link}>
-              {!!user ? "Sign Out" : "Sign In"}
-            </LinkElement>
-          </SignOutButton>
         </li>
       </div>
       <div className="flex gap-4">
