@@ -19,10 +19,8 @@ const LinkElement = ({ href, children }: LinkProps) => {
 
 export const NavBar = async () => {
   const user = await currentUser();
-  let text = "Sign Out";
   let link = "/";
   if (!user) {
-    text = "Sign In";
     link = "sign-in/";
   }
   return (
@@ -42,7 +40,9 @@ export const NavBar = async () => {
           <LinkElement href="/guide">Guide</LinkElement>
           <LinkElement href="/dashboard">Dashboard</LinkElement>
           <SignOutButton>
-            <LinkElement href={link}>{text}</LinkElement>
+            <LinkElement href={link}>
+              {!!user ? "Sign Out" : "Sign In"}
+            </LinkElement>
           </SignOutButton>
         </li>
       </div>
