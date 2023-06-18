@@ -1,3 +1,4 @@
+import { SignOutButton, currentUser } from "@clerk/nextjs";
 import classNames from "classnames";
 import { ReactNode } from "react";
 import { Button } from "../Button";
@@ -16,7 +17,14 @@ const LinkElement = ({ href, children }: LinkProps) => {
   );
 };
 
-export const NavBar = () => {
+export const NavBar = async () => {
+  const user = await currentUser();
+  let text = "Sign Out";
+  let link = "/";
+  if (!user) {
+    text = "Sign In";
+    link = "sign-in/";
+  }
   return (
     <header
       className={classNames(
@@ -33,6 +41,9 @@ export const NavBar = () => {
           <LinkElement href="/">Home</LinkElement>
           <LinkElement href="/guide">Guide</LinkElement>
           <LinkElement href="/dashboard">Dashboard</LinkElement>
+          <SignOutButton>
+            <LinkElement href={link}>{text}</LinkElement>
+          </SignOutButton>
         </li>
       </div>
       <div className="flex gap-4">

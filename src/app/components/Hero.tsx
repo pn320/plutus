@@ -2,7 +2,7 @@ import classNames from "classnames";
 import { Button } from "./Button";
 import { GridCircle } from "./Grid";
 
-export const Hero = async () => {
+export const Hero = () => {
   return (
     <div
       className={classNames(
