@@ -23,6 +23,7 @@ module.exports = {
           "linear-gradient(180deg,rgba(0, 0, 0, .45),rgba(0, 0, 0, .45) 50%,transparent 0,transparent)",
         gridlinevertreverse:
           "linear-gradient(180deg,rgba(0, 0, 0, .45),rgba(0, 0, 0, .45) 50%,transparent 0,transparent)",
+        features: "linear-gradient(180deg,#fff 30%,#fafafa 50%,#fafafa 100%)",
       },
       backgroundColor: {
         nav: "rgb(255 255 255 / 80%)",
@@ -38,6 +39,7 @@ module.exports = {
       maxWidth: {
         hero: "calc(1234px + 56px * 2)",
         "8xl": "96rem",
+        container: "1200px",
       },
       minHeight: {
         hero: "720px",
