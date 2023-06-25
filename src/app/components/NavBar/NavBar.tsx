@@ -1,4 +1,3 @@
-import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import classNames from "classnames";
 import { ReactNode } from "react";
 import { Button } from "../Button";
@@ -30,13 +29,7 @@ export const NavBar = async () => {
       )}
     >
       <div>
-        <li className="list-none flex gap-6 text-gray-11 font-light text-sm items-center">
-          <SignedIn>
-            <UserButton afterSignOutUrl="/" />
-          </SignedIn>
-          <SignedOut>
-            <LinkElement href="/sign-in">Sign In</LinkElement>
-          </SignedOut>
+        <li className="list-none flex gap-4 text-gray-11 font-light text-sm items-center">
           <LinkElement href="/">Home</LinkElement>
           <LinkElement href="/guide">Guide</LinkElement>
           <LinkElement href="/dashboard">Dashboard</LinkElement>
