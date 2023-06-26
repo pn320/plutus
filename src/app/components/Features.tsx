@@ -1,3 +1,5 @@
+import { Card } from "./Card";
+
 export const Features = () => {
   return (
     <section className="">
@@ -9,6 +11,9 @@ export const Features = () => {
           <p className="text-xl leading-6 text-gray-11 font-light tracking-[-0.02em]">
             All the tools you need to get better at Interviewing. Faster.
           </p>
+          <div className="grid">
+            <Card />
+          </div>
         </div>
       </div>
     </section>

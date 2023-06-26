@@ -30,11 +30,9 @@
     -webkit-mask-composite: destination-in;
     mask-composite: destination-in;
   }
-}
 
-.cl-signIn-start {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  .banner-fade {
+    -webkit-mask: (to top, #fff 50%, transparent);
+    mask: (to top, #fff 50%, transparent);
+  }
 }
