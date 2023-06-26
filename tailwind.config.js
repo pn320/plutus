@@ -10,8 +10,16 @@ module.exports = {
       colors: {
         foreground: "#000",
         gray: {
+          1: "#fafafa",
           2: "#eaeaea",
+          3: "#999",
           11: "#666666",
+        },
+        blue: {
+          5: "#0070f3",
+        },
+        orange: {
+          5: "#f5a623",
         },
       },
       backgroundImage: {
@@ -55,6 +63,9 @@ module.exports = {
       },
       width: {
         gridline: "calc(100% + 150px)",
+      },
+      transitionTimingFunction: {
+        ease: "cubic-bezier(.25, .1, .25, 1)",
       },
       keyframes: {
         grid: {

@@ -1,10 +1,14 @@
 import classNames from "classnames";
+import { Announcement } from "./Announcement";
 import { Button } from "./Button";
 import { GridCircle } from "./Grid";
 
 export const Hero = () => {
   return (
     <div className="min-h-[640px]">
+      <div className="relative p-8 flex justify-center">
+        <Announcement />
+      </div>
       <div
         className={classNames(
           /* base styles */
