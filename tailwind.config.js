@@ -31,7 +31,6 @@ module.exports = {
           "linear-gradient(180deg,rgba(0, 0, 0, .45),rgba(0, 0, 0, .45) 50%,transparent 0,transparent)",
         gridlinevertreverse:
           "linear-gradient(180deg,rgba(0, 0, 0, .45),rgba(0, 0, 0, .45) 50%,transparent 0,transparent)",
-        features: "linear-gradient(180deg,#fff 30%,#fafafa 50%,#fafafa 100%)",
       },
       backgroundColor: {
         nav: "rgb(255 255 255 / 80%)",
@@ -80,6 +79,10 @@ module.exports = {
           "0%": { height: "0%", opacity: "100%" },
           "100%": { height: "calc(100% + 75px)", opacity: "40%" },
         },
+        banner: {
+          "0%": { height: "0%", opacity: "100%" },
+          "100%": { height: "100%", opacity: "40%" },
+        },
         opacity: {
           "0%": { opacity: "0%", strokeDashoffset: "10" },
           "100%": { opacity: "100%", strokeDashoffset: "0" },
@@ -88,6 +91,7 @@ module.exports = {
       animation: {
         grid: "grid 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards",
         gridvert: "gridvert 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards",
+        banner: "banner 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards",
         gridvertsmall:
           "gridvertsmall 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards",
         circle: "opacity 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards",

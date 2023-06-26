@@ -11,18 +11,18 @@ export const Hero = () => {
           <div
             className={classNames(
               //   gridline styling
-              "md:absolute md:visible invisible right-0 top-0 w-[1px] bg-gridlinevertreverse h-full bg-[length:1px_5px]",
+              "md:absolute md:visible invisible right-0 top-0 w-[1px] bg-gridlinevert h-full bg-[length:1px_5px]",
               //   grid animation
-              "banner-fade animate-gridlinevertreverse delay-[0.65s]"
+              "banner-fade animate-banner delay-[0.65s]"
             )}
           />
           <Announcement />
           <div
             className={classNames(
               //   gridline styling
-              "md:absolute md:visible invisible left-0 top-0 w-[1px] bg-gridlinevertreverse h-full bg-[length:1px_5px]",
+              "md:absolute md:visible invisible left-0 top-0 w-[1px] bg-gridlinevert h-full bg-[length:1px_5px]",
               //   grid animation
-              "banner-fade animate-gridlinevertreverse delay-[0.65s]"
+              "banner-fade animate-banner delay-[0.65s]"
             )}
           />
         </div>

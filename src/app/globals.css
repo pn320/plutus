@@ -32,7 +32,7 @@
   }
 
   .banner-fade {
-    -webkit-mask: (to top, #fff 50%, transparent);
-    mask: (to top, #fff 50%, transparent);
+    -webkit-mask: linear-gradient(to top, #fff 50%, transparent);
+    mask: linear-gradient(to top, #fff 50%, transparent);
   }
 }
