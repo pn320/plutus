@@ -11,9 +11,11 @@ export const Features = () => {
           <p className="text-xl leading-6 text-gray-11 font-light tracking-[-0.02em]">
             All the tools you need to get better at Interviewing. Faster.
           </p>
-          <div className="grid">
-            <Card />
-          </div>
+        </div>
+        <div className="my-12 grid grid-cols-2 lg:grid-cols-3 gap-8">
+          <Card href={"/"} />
+          <Card href={"/"} />
+          <Card href={"/"} />
         </div>
       </div>
     </section>

@@ -31,6 +31,7 @@ module.exports = {
           "linear-gradient(180deg,rgba(0, 0, 0, .45),rgba(0, 0, 0, .45) 50%,transparent 0,transparent)",
         gridlinevertreverse:
           "linear-gradient(180deg,rgba(0, 0, 0, .45),rgba(0, 0, 0, .45) 50%,transparent 0,transparent)",
+        noise: "url('/images/noise.png')",
       },
       backgroundColor: {
         nav: "rgb(255 255 255 / 80%)",

@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply overflow-hidden;
+  }
   body {
     @apply box-border m-0 p-0;
   }

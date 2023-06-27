@@ -8,7 +8,7 @@ export const Announcement = () => {
       href={"/updates"}
     >
       <Status status={"beta"} />
-      <span className="text-xs">Plutus is still in active development</span>
+      <span className="text-xs">Plutus is in Beta</span>
       <span>
         <svg
           data-testid="geist-icon"
@@ -23,7 +23,9 @@ export const Announcement = () => {
           width="24"
           className="w-[14px] h-[14px]"
         >
-          <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 16l4-4-4-4"></path>
+          <path d="M8 12h8"></path>
         </svg>
       </span>
     </Link>
