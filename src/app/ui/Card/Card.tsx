@@ -3,12 +3,13 @@
 import classNames from "classnames";
 import { VariantProps, cva } from "cva";
 import Link from "next/link";
-import { PropsWithChildren, useState } from "react";
+import { PropsWithChildren } from "react";
 
 interface CardProps
   extends VariantProps<typeof cardClasses>,
     PropsWithChildren {
   href: string;
+  title: string;
 }
 
 const cardClasses = cva(
@@ -29,18 +30,18 @@ const cardClasses = cva(
     "transition-colors",
     "duration-300",
     "ease-in-out",
-    "hover:before:w-6",
-    "hover:before:h-6",
-    "hover:before:rounded-full",
-    "hover:before:blur-lg",
-    "overflow-hidden",
-    "hover:before:bg-gray-11/50",
-    "hover:before:absolute",
+    // "hover:before:w-6",
+    // "hover:before:h-6",
+    // "hover:before:rounded-full",
+    // "hover:before:blur-lg",
+    // "overflow-hidden",
+    // "hover:before:bg-gray-11/50",
+    // "hover:before:absolute",
   ],
   {
     variants: {
       size: {
-        large: [],
+        large: ["w-[26rem]"],
         small: [],
       },
       defaultVariants: { size: "small" },
@@ -48,27 +49,21 @@ const cardClasses = cva(
   }
 );
 
-export const Card = ({ href, children, size }: CardProps) => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  let positions = [
-    `hover:before:top-${position.x}`,
-    `hover:before:left-${position.y}`,
-  ];
+export const Card = ({ href, children, title, size }: CardProps) => {
+  //   const [position, setPosition] = useState({ x: 0, y: 0 });
+  //   let positions = [`before:top-${position.x}`, `before:left-${position.y}`];
 
   return (
     <Link
       href={href}
-      onMouseMove={(event) => {
-        event.preventDefault();
-        setPosition({ x: event.clientX, y: event.clientY });
-        positions = [
-          `hover:before:top-${position.y}`,
-          `hover:before:left-${position.x}`,
-        ];
-      }}
+      //   onMouseMove={(event) => {
+      //     event.preventDefault();
+      //     setPosition({ x: event.clientX, y: event.clientY });
+      //     positions = [`before:top-${position.y}`, `before:left-${position.x}`];
+      //   }}
       className={classNames(
-        cardClasses({ size }),
-        `${positions[0]} ${positions[1]}`
+        cardClasses({ size })
+        // `${positions[0]} ${positions[1]}`
       )}
     >
       {children}
