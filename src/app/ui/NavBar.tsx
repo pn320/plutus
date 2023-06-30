@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { ReactNode } from "react";
-import { Button } from "../Button";
-import { TrendUpIcon } from "../Icons/learn";
+import { Button } from "./Button";
+import { TrendUpIcon } from "./Icons/learn";
 
 interface LinkProps {
   href: string;

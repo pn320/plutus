@@ -1,9 +1,9 @@
-import { Inter, Roboto_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "./ui/NavBar";
 
-const inter = Inter({ subsets: ["latin-ext"] });
-const roboto = Roboto_Mono({ subsets: ["latin-ext"] });
+const inter = Inter({ subsets: ["latin-ext"], variable: "--font-inter" });
+const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata = {
   title: "Plutus",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={`${inter.className} ${mono.className} font-inter`}>
         <NavBar />
         {children}
       </body>

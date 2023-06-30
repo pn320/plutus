@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        mono: ["var(--font-mono)"],
+      },
       colors: {
         foreground: "#000",
         gray: {

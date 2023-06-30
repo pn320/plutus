@@ -66,7 +66,9 @@ export const Card = ({ href, children, title, size }: CardProps) => {
         // `${positions[0]} ${positions[1]}`
       )}
     >
-      {children}
+      <div className="flex flex-col p-4">
+        <h1 className="font-mono">{title}</h1>
+      </div>
     </Link>
   );
 };

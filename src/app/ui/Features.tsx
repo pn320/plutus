@@ -13,10 +13,7 @@ export const Features = () => {
           </p>
         </div>
         <div className="my-12 grid grid-cols-2 lg:grid-cols-3 gap-8 grid-flow-row-dense">
-          <Card
-            href={"/"}
-            title={"Instantly find a partner with your ability to discuss"}
-          />
+          <Card href={"/"} title={"Instantly find a partner"} />
           <Card href={"/"} title={""} />
           <Card href={"/"} title={""} />
         </div>
