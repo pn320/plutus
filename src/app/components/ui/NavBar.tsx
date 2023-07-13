@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import Link from "next/link";
 import { ReactNode } from "react";
 import { Button } from "./Button";
 import { TrendUpIcon } from "./Icons/learn";
@@ -11,12 +12,12 @@ interface LinkProps {
 const LinkElement = ({ href, children }: LinkProps) => {
   return (
     <ul className="hover:text-foreground transition-colors duration-150 ease-in-out">
-      <a href={href}>{children}</a>
+      <Link href={href}>{children}</Link>
     </ul>
   );
 };
 
-export const NavBar = async () => {
+export const NavBar = () => {
   return (
     <header
       className={classNames(
