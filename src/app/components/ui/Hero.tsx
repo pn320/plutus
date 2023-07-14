@@ -49,7 +49,7 @@ export const Hero = () => {
         <h1
           className={classNames(
             //   base text styling
-            "w-full relative font-sans p-6 text-hero lg:leading-hero md:leading-[60px] leading-[55px] bg-hero text-transparent bg-clip-text font-extrabold tracking-[-0.035em]",
+            "w-full selection:unset relative font-sans p-6 text-hero lg:leading-hero md:leading-[60px] leading-[55px] bg-hero text-transparent bg-clip-text font-extrabold tracking-[-0.035em]",
             //   gridline styling
             "after:absolute after:h-[1px] after:bg-gridline after:bg-[length:5px_1px] after:bottom-[-0.1px] after:left-[-75px] after:w-gridline",
             // grid line animation

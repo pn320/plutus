@@ -6,6 +6,9 @@
   html {
     @apply overflow-x-hidden;
   }
+  ::selection {
+    @apply bg-[#79ffe1] text-inherit;
+  }
   body {
     @apply box-border m-0 p-0;
   }
@@ -21,6 +24,11 @@
       linear-gradient(#000, #000);
     -webkit-mask-composite: destination-in;
     mask-composite: destination-in;
+  }
+
+  .unset {
+    background-clip: unset;
+    color: initial;
   }
 
   .grid-fade-vert {
